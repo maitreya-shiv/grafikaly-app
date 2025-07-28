@@ -16,6 +16,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { Link } from "react-router";
 
 
 
@@ -38,11 +39,11 @@ const SidebarComponent = () => {
       </Box>
       <Box sx={{ mt: 10, ml: 7, color: '#f9f0ff' }}>
         <List>
-          {['Home', 'Blog'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
+          {[{text:'Home', route:"/"}, {text:'Blog', route:"/blog"}].map((item, index) => (
+            <ListItem key={item.text} disablePadding>
+              <ListItemButton component={Link} to={item.route}>
                 <ListItemText>
-                  <Typography sx={{ color: '#f9f0ff', fontSize: '2em', fontWeight: 'bold' }}>{text}</Typography>
+                  <Typography sx={{ color: '#f9f0ff', fontSize: '2em', fontWeight: 'bold' }}>{item.text}</Typography>
                 </ListItemText>
               </ListItemButton>
             </ListItem>

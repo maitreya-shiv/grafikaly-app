@@ -4,7 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import SidebarComponent from "./components/SidebarComponent";
 import { createTheme } from '@mui/material/styles';
-  import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter } from "react-router";
 
 
 const theme = createTheme({
@@ -24,11 +25,13 @@ const theme = createTheme({
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-      <div className="app-container">
-        <SidebarComponent />
-        <App />
-      </div>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <div className="app-container">
+          <SidebarComponent />
+          <App />
+        </div>
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
