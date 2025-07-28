@@ -1,0 +1,116 @@
+#root {
+  /* max-width: 1280px; */
+  /* text-align: center; */
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.app-menu {
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+  background-color: #362b2e;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding-right: 20px;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  flex: 9.5;
+  background-color: #f9f0ff;
+  height: 400%;
+  margin-left: 320px;
+  width: calc(100% - 320px);
+}
+
+.app-content-home {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.app-content-home-left {
+  display: flex;
+  flex: 5;
+  height:100%;
+}
+
+.app-content-home-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content-home-right {
+  display: flex;
+  flex: 7;
+  height: 100%;
+}
+
+.app-content-services {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #302729;
+}
+
+.app-content-services-left {
+  display: flex;
+  flex: 8;
+  height:100%;
+}
+
+.app-content-services-right {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  height: 100%;
+}
+
+
+.app-content-skills {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.app-content-skills-left-content {
+  display: flex;
+  flex: 8;
+  height: 100%;
+}
+
+.app-content-skills-right-content {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  height: 100%;
+}
+
+.app-content-contact {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #302729;
+}
+
+.app-content-contact-left-content {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  height:100%;
+}
+
+.app-content-contact-right-content {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  height: 100%;
+}
